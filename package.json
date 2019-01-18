@@ -1,0 +1,55 @@
+{
+    "name": "ynn-mock",
+    "version": "0.0.0",
+    "description": "Mocking data for Ynn",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --forceExit",
+        "tw" : "jest --watch",
+        "test-watch" : "npm run tw",
+        "test-cov" : "jest --coverage --runInBand --forceExit --detectOpenHandles",
+        "lint" : "eslint lib --cache --ignore-path .eslintignore",
+        "precommit-msg" : "echo 'Pre-commit checks...' && exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ynnjs/ynn-mock.git"
+    },
+    "keywords": [
+        "ynn",
+        "mock",
+        "test",
+        "data"
+    ],
+    "author": "LvChengbin <lvchengbin59@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=8.0"
+    },
+    "bugs": {
+        "url": "https://github.com/ynnjs/ynn-mock/issues"
+    },
+    "homepage": "https://github.com/ynnjs/ynn-mock#readme",
+    "devDependencies": {
+        "eslint": "^5.12.0",
+        "jest": "^23.6.0",
+        "pre-commit": "^1.2.2"
+    },
+    "jest": {
+        "testMatch": [
+            "**/test/**/*.spec.js"
+        ],
+        "coverageReporters": [
+            "text-summary",
+            "text",
+            "lcov"
+        ],
+        "collectCoverageFrom": [
+            "lib/**/*.js"
+        ],
+        "testEnvironment": "node"
+    },
+    "dependencies": {
+        "ynn": "0.0.23"
+    }
+}
