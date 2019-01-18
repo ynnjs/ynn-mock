@@ -5,11 +5,11 @@
     "main": "index.js",
     "scripts": {
         "test": "jest --forceExit",
-        "tw" : "jest --watch",
-        "test-watch" : "npm run tw",
-        "test-cov" : "jest --coverage --runInBand --forceExit --detectOpenHandles",
-        "lint" : "eslint lib --cache --ignore-path .eslintignore",
-        "precommit-msg" : "echo 'Pre-commit checks...' && exit 0"
+        "tw": "jest --watch",
+        "test-watch": "npm run tw",
+        "test-cov": "jest --coverage --runInBand --forceExit --detectOpenHandles",
+        "lint": "eslint lib --cache --ignore-path .eslintignore",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
     },
     "repository": {
         "type": "git",
@@ -50,6 +50,7 @@
         "testEnvironment": "node"
     },
     "dependencies": {
+        "@lvchengbin/is": "0.0.26",
         "ynn": "0.0.23"
     }
 }
