@@ -15,7 +15,9 @@ $ npm i --save-dev ynn-mock
 Mocking data for RSC request for test cases.
 
 **mock.rsc( app, uri, response )**
+
 **mock.rsc( app, response )**
+
 **mock.rsc.restore( app )**
 
 ```js
