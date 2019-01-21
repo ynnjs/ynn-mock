@@ -6,6 +6,7 @@
     },
     "globals" : {
         "define" : true,
+        "jest" : true,
         "describe" : true,
         "xdescribe" : true,
         "it" : true,
