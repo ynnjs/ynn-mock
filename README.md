@@ -10,7 +10,7 @@ $ npm i --save-dev ynn-mock
 
 ## Usage
 
-### RSC
+### mock.rsc
 
 Mocking data for RSC request for test cases.
 
@@ -49,6 +49,29 @@ describe( 'Ynn test', () => {
     it( 'should use mock response which does not specify an URI', async () => {
         const res = app.rsc.call( 'api/that/is/not/mock' );
         expect( res ).toEqual( { n : 2 } ); // pass
+    } );
+} );
+```
+
+### mock.service
+
+```js
+const mock = require( 'ynn-mock' );
+
+describe( 'mock.service', () => {
+    it( 'desc', async () => {
+        const app = new Ynn( {
+            root : __dirname,
+            debugging : true,
+            logging : false
+        } );
+
+        await mock.service( app, 'serviceName', {
+            property1 : value,
+            property2 : value
+            ...
+        } )
+
     } );
 } );
 ```

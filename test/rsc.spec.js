@@ -82,7 +82,7 @@ describe( 'rsc', () => {
     } );
 
     it( 'should call the origin RSC.call function', async () => {
-        await expect ( app.rsc.call( 'calling-a-unmocked-api' ) );
+        await expect ( app.rsc.call( 'calling-a-unmocked-api' ).catch( () => {} ) );
         expect( originCallSpy ).toHaveBeenCalled();
     } );
 

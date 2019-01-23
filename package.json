@@ -1,6 +1,6 @@
 {
     "name": "ynn-mock",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Mocking data for Ynn",
     "main": "index.js",
     "scripts": {
@@ -51,6 +51,6 @@
     },
     "dependencies": {
         "@lvchengbin/is": "0.0.26",
-        "ynn": "0.0.23"
+        "ynn": "0.0.25"
     }
 }
