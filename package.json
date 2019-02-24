@@ -34,7 +34,7 @@
         "eslint": "^5.14.1",
         "jest": "^24.1.0",
         "pre-commit": "^1.2.2",
-        "ynn": "0.0.36"
+        "ynn": "0.0.39"
     },
     "jest": {
         "testMatch": [
